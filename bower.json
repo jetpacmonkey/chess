@@ -1,1 +1,9 @@
-{}
+{
+    "name": "chess",
+    "dependencies": {
+        "lodash": "3.10.0",
+        "react": "0.13.3",
+        "react-router": "0.13.3"
+    },
+    "private": true
+}

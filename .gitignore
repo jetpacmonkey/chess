@@ -17,5 +17,5 @@ Thumbs.db
 local_settings.py
 
 # 3rd party artifacts
-server/common/static/vendor # (bower)
+static/vendor
 node_modules
