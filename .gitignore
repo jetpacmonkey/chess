@@ -1,0 +1,21 @@
+# Compiled Python files
+*.pyc
+
+# Folder view configuration files
+.DS_Store
+Desktop.ini
+
+# Thumbnail cache files
+._*
+Thumbs.db
+
+# Files that might appear on external disks
+.Spotlight-V100
+.Trashes
+
+# Local server settings
+local_settings.py
+
+# 3rd party artifacts
+server/common/static/vendor # (bower)
+node_modules
