@@ -17,5 +17,8 @@ Thumbs.db
 local_settings.py
 
 # 3rd party artifacts
+bower_components
 static/vendor
 node_modules
+
+dist
