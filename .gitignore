@@ -1,6 +1,9 @@
 # Compiled Python files
 *.pyc
 
+# Cabal artifacts
+.cabal-sandbox
+
 # Folder view configuration files
 .DS_Store
 Desktop.ini
