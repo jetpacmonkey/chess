@@ -8,7 +8,7 @@ data Piece = { name :: String
              , royal :: Bool
              , promotes :: Bool
              , promoteTo :: Bool
-             } deriving (Show)
+             } deriving (Show, Eq)
 
 data Move = { conditions :: [ MoveCondition ]
             , moveType :: MoveType
@@ -16,17 +16,21 @@ data Move = { conditions :: [ MoveCondition ]
             , direction :: MoveDirection
             , repeats :: Bool
             , nextMove :: Maybe Move
-            } deriving (Show)
+            } deriving (Show, Eq)
 
-data MoveCondition = InitialMove | CaptureMove | NonCaptureMove deriving (Show)
+data MoveCondition = InitialMove | CaptureMove | NonCaptureMove deriving (Show, Eq)
 
-data MoveType = DefaultMove | Leaper | Locust | Catapult deriving (Show)
+data MoveType = DefaultMove | Leaper | Locust | Catapult deriving (Show, Eq)
 
-data MoveDistance = MoveDistance Int | MoveRange Int Int | Hippogonal [ Int ] | UnlimitedMove deriving (Show)
+data MoveDistance = MoveDistance Int
+                  | MoveRange Int Int
+                  | Hippogonal [ Int ]
+                  | UnlimitedMove
+                  deriving (Show, Eq)
 
 data MoveDirection = { forwardMove :: Bool
                      , forwardDiagMove :: Bool
                      , sideMove :: Bool
                      , backwardMove :: Bool
                      , backwardDiagMove :: Bool
-                     } deriving (Show)
+                     } deriving (Show, Eq)
