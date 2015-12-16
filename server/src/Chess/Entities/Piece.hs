@@ -2,7 +2,8 @@ module Chess.Entities.Piece ( Piece
                             , Move
                             ) where
 
-data Piece = { name :: String
+data Piece = { pieceID :: Int
+             , name :: String
              , cost :: Int
              , moves :: [ Move ]
              , royal :: Bool
