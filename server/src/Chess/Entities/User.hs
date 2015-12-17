@@ -1,6 +1,6 @@
 module Chess.Entities.User ( User
                            ) where
 
-data User = { userID :: Int
-            , username :: String
-            } deriving (Show, Eq)
+data User = User { userID :: Int
+                 , username :: String
+                 } deriving (Show, Eq)
